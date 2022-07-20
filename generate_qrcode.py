@@ -1,6 +1,6 @@
 import qrcode
 
-input_URL = "https://www.google.com/"
+input_URL = "https://www.discord.com/"
 
 qr = qrcode.QRCode(
     version=1,
@@ -12,7 +12,7 @@ qr = qrcode.QRCode(
 qr.add_data(input_URL)
 qr.make(fit=True)
 
-img = qr.make_image(fill_color="red", back_color="white")
-img.save("url_qrcode.png")
+img = qr.make_image(fill_color="#7289da", back_color="#ffffff")
+img.save("discord_qrcode.png")
 
 print(qr.data_list)
